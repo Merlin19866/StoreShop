@@ -16,7 +16,7 @@ public class AppCore extends Application
        /*FXMLLoader kell,hogy ezzel töltjük be az app.fxml */
        FXMLLoader loader =new FXMLLoader(getClass().getResource("app.fxml"));
        
-       Scene scene = new Scene(loader.load(), 640   ,640);
+       Scene scene = new Scene(loader.load(), 640   ,800);
        stage.setScene(scene);
        stage.setTitle("Feladatok kezelése");
        stage.show();
