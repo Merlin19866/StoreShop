@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.merlin.StoreShop.controller.AppController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="119.0" prefWidth="663.0" spacing="60.0" style="-fx-background-color: #ddd;">
+         <children>
+            <Button fx:id="newProcurement" mnemonicParsing="false" onAction="#newProcurement" text="Bevételezés" />
+            <Button mnemonicParsing="false" onAction="#newCustomer" text="Új beszállító" />
+            <Button fx:id="newProduct" mnemonicParsing="false" onAction="#newProduct" text="Új termék" />
+            <Button mnemonicParsing="false" onAction="#ListofCustomer" text="Beszállítók" />
+            <Button mnemonicParsing="false" onAction="#ListofProduct" text="Termékek" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="txtTitle" text="Feliratok">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox fx:id="container" prefHeight="200.0" prefWidth="100.0" spacing="60.0" VBox.vgrow="ALWAYS">
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding></VBox>
+   </children>
+</VBox>
