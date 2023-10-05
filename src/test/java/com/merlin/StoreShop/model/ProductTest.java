@@ -17,7 +17,6 @@ public class ProductTest {
         assertEquals(instance.getName(), "Asztal");
         assertEquals(500, instance.getName());
         
-       
     }
 
     @Test
@@ -29,5 +28,25 @@ public class ProductTest {
         
         
     }
+    
+    @Test
+    public void testToString() {
+    // csak 'public' methódusokat
+    // constructor, getter, setter nem teszteljük
+    // given - when - then
+    
+    //Given - Kiindulás
+     Product instance = new Product("Szék",15);
+     String expectation = "Product{id=0, name=Szék, unittype=null, weight=15}";
+     
+     //Then - Csinál (methódus hívás)
+     String result = instance.toString();
+     
+     //Then - Végeredmény
+     assertEquals(expectation, result);
+    }
+    
+    // TDD: 'test driven development'
+    // Unit test - integrációs teszt - end-to-end
     
 }

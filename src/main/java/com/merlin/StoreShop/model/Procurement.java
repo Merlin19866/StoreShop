@@ -24,16 +24,14 @@ public class Procurement
     private String accountnumber;
     private int totalamount;
     private int nprice;
-    private String name;
     private String product;
     private String customer;
 
-    public Procurement(int stock, String accountnumber, int totalamount, int nprice, String name, String product, String customer) {
+    public Procurement(int stock, String accountnumber, int totalamount, int nprice,String product, String customer) {
         this.stock = stock;
         this.accountnumber = accountnumber;
         this.totalamount = totalamount;
         this.nprice = nprice;
-        this.name = name;
         this.product = product;
         this.customer = customer;
     }
@@ -41,10 +39,6 @@ public class Procurement
 
     public Procurement() 
     {
-    }
-
-    public String getName() {
-        return name;
     }
 
     public String getProduct() {
@@ -97,11 +91,6 @@ public class Procurement
     public void setNprice(int nprice) {
         this.nprice = nprice;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setTotalamount(int totalamount) {
         this.totalamount = totalamount;
     }
