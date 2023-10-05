@@ -14,7 +14,7 @@ public class ProductTable extends Table<Product>
         
         addColumn("Termék neve", "name", 100);
         addColumn("Mennyiségi egység","unittype",120);
-        addColumn("Súly", "weight", 100);
+        addColumn("Súly/kg", "weight", 100);
         
         setPlaceholder("Nincs termék");
         
